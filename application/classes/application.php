@@ -17,20 +17,17 @@ class Application
 
     const USE_HTML_COMPRESSION = true;
 
-    public $emailDev = 'evgeniy@dubskiy.pro';
-    public $emailSupport = 'write@dubskiy.pro';
+    public $emailDev = 'YOUR E-MAIL DEVELOPER';
+    public $emailSupport = 'SUPPORT EMAIL';
 
     // Application Attributes
-    public $title = "Professional Developer";
+    public $title = "Page Title";
     public $description = '';
     public $charset = 'utf-8';
-    public $author = "Evgeniy Dubskiy";
+    public $author = "%AUTHOR%";
     public $content;
     public $header;
     public $footer;
-
-    /* @var Menu **/
-    public $Menu;
 
     // Path Media with given default folder names as %APPPATH/%folderName
     public $dirApp = 'application';
