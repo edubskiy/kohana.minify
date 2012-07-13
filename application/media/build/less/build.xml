@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE project>
+<project name="Less Compiler" default="less" basedir="../../"> <!-- one back since we're in build/ -->
+
+<!-- load property files -->
+<property file="../build/config/project.properties"/>
+<property file="../build/config/default.properties"/>
+
+<property name="dir.less" value="${basedir}/less/" />
+
+<echo>Less directory set: ${dir.less}</echo>
+
+<target name="less">
+
+    <echo>Compiling Less...</echo>
+
+    <property name="compiled.css" value="compiled-css.css" />
+
+    <apply executable="lessc" parallel="false">
+        <fileset dir="${dir.less}" includes="style.less"/>
+        <srcfile/>
+        <arg line="${dir.less}${compiled.css}"/>
+        <!--<mapper type="merge" to="${dir.less}${compiled.css}"/>-->
+        <!--<targetfile/>-->
+    </apply>
+
+    <echo>Less successfully compiled!</echo>
+
+</target>
+
+</project>
