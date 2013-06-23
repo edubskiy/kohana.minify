@@ -1,4 +1,6 @@
-php-kohana-compressors
-======================
+Template Plugin for Compressing JS, CSS, HTML Files using:
+ - GClosure (Java)
+ - YUI Compressor (Java)
+ - PHPMinify (PHP). 
 
-Template Plugin for for Compressing JS and CSS Files using GClosure, YUI Compressor, PHPMinify. Also Included BuildScript
+Also BuildScript is Included
